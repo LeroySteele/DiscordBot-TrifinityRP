@@ -6,16 +6,14 @@ module.exports = {
         if ( interaction.isButton() ) {
             if (interaction.customId == "citizenbutton") {
                 try {
-                    await interaction.deferReply({ ephemeral: true });
-                    await interaction.editReply({
-                        content: "Registering Citizen", ephemeral: true,
-                    });
+                    //deferReply/Reply cant be used before modal
                     const modal = new ModalBuilder()
                         .setCustomId('nicknamemodal')
                         .setTitle("Citizen information");
                     const nicknameInput = new TextInputBuilder()
                         .setCustomId('nicknameinput')
-                        .setLabel("Insert your 'in-city' [Name][Surname]")
+                        .setLabel("Insert your city Name and Surname.")
+                        .setPlaceholder("Enter 2 words only (Name & Surname)")
                         .setStyle(TextInputStyle.Short)
                         .setMinLength(3)
                         .setRequired(true);
@@ -23,7 +21,7 @@ module.exports = {
                     modal.addComponents(firstActionRow);
                     await interaction.showModal(modal);
                 } catch (err) {
-                    await interaction.editReply({
+                    await interaction.reply({
                         content: `An error has occurred, please try again later and if the problem persists contact a high command officer. Code: Button Citizen.`, ephemeral: true,
                     });
                     console.error(err);
