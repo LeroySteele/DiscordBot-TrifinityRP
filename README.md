@@ -1,7 +1,7 @@
 # DiscordBot-TrifinityRP
 
 This is a discord bot for a private FiveM GTA RP server used to automatically manage users, roles and all linked actions.
-This bot is registered on Discord Developer Portal, uses mongoDB Atlas Database for online storage and was hosted on Discloud for 24/7 accessibility.
+This bot is registered on Discord Developer Portal, displays information using an online excel sheet and was hosted on Discloud for 24/7 accessibility.
 It handles custom slash commands and custom event listeners with an indepth ticket system.
 
 ### Commands to run in console during setup
