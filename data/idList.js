@@ -89,7 +89,7 @@ let idList = {
     cadetReportChannel : "1271166350080872499",
     suggestionChannel : "1269784434802950165",
 
-    //transcripts
+    //transcript channel ID's
     policeApplicationsTrans : "1269795596500340746",
     citizenComplaintsTrans : "1269795729782603836",
     policeComplaintsTrans : "1269795826977345547",
@@ -97,7 +97,7 @@ let idList = {
     divisionTestsTrans : "1269796000185450567",
     refundTrans : "1269796203508404296",
 
-    //Reaction Icons
+    //Reaction Icons 
     tickReaction : "✅",
     crossReaction : "❌",
 
