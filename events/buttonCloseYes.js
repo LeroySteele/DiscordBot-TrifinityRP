@@ -1,3 +1,5 @@
+// Once a user opt's to close a ticket and they confirm it with this button, a transcript will then get created and sent into the logs channel with relative information.
+
 const { Events, EmbedBuilder, Collection } = require('discord.js');
 const discordTranscripts = require('discord-html-transcripts');
 const idList = require('../data/idList');
