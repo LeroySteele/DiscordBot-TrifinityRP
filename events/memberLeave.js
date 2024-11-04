@@ -1,3 +1,5 @@
+// WHen a member leaves the server, a messege is sent to the logs channel for record keeping
+
 const { Events, EmbedBuilder } = require('discord.js');
 const idList = require('../data/idList.js');
 const ids = require('../data/ids');
