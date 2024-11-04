@@ -1,3 +1,6 @@
+// If an officer is fired this command can be used to remove all police role, renames the user so they appear as a civilian in teh discord and removes them from the excel sheet
+// A messege is sent in the logs channel to keep track
+
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const idList = require('../../data/idList');
 const ids = require('../../data/ids.js');
@@ -59,14 +62,14 @@ module.exports = {
                     });
                     return res.data.values;
                 }
-                ///clear data
+                ///clear data from excel sheet
                 async function clearSheet(googleSheetClient, tabName) {
                     await googleSheetClient.spreadsheets.values.clear({
                         spreadsheetId: ids.sheetId,
                         range: `${tabName}!${ids.range}`,
                     })  
                 }
-                //write
+                //writes new data to excel
                 async function _writeGoogleSheet(googleSheetClient, tabName, data) {
                     await googleSheetClient.spreadsheets.values.update({
                       spreadsheetId: ids.sheetId,
