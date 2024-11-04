@@ -1,3 +1,5 @@
+// This command gets used by administrators/staff to view information about a certain users account
+
 const { SlashCommandBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList.js');
