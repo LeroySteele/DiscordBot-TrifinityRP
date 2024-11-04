@@ -1,3 +1,6 @@
+// Users can use the suggestion channel to voice what additions they'd like to see in the RP server. 
+// When they use the command it will display in the channel and automatically start a vote and a thread for others to discuss it.
+
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const idList = require('../../data/idList');
 const ids = require('../../data/ids.js');
