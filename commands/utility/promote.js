@@ -1,3 +1,9 @@
+// Throughout Roleplay officers can get promoted and this command  
+// -Updates the excel sheet
+// -Changes their discord nickanme (to their new call sign)
+// -Removes their 'old rank' roles and adds the new roles.
+// -Sends a messege in the logs channel for 'record keeping'
+
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const idList = require('../../data/idList');
 const ids = require('../../data/ids.js');
@@ -60,14 +66,14 @@ module.exports = {
                     });
                     return res.data.values;
                 }
-                ///clear data
+                ///clear data from excel sheet
                 async function clearSheet(googleSheetClient, tabName) {
                     await googleSheetClient.spreadsheets.values.clear({
                         spreadsheetId: ids.sheetId,
                         range: `${tabName}!${ids.range}`,
                     })  
                 }
-                //write
+                //write new data to excel sheet
                 async function _writeGoogleSheet(googleSheetClient, tabName, data) {
                     await googleSheetClient.spreadsheets.values.update({
                       spreadsheetId: ids.sheetId,
