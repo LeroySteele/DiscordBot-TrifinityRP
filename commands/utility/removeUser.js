@@ -1,3 +1,5 @@
+// By default only the ticket creater and select members are given permission to see/interact with the ticket, this command allows members 
+// A messege is sent in the ticket notifying other members once complete
 const { SlashCommandBuilder } = require('discord.js');
 const idList = require('../../data/idList');
 
