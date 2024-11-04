@@ -1,3 +1,7 @@
+// If a messege is sent to the suggestion channel, it will react (to start a vote) and resend the template.
+// If a messege is sent to the warrant channel, it wil resend it to keep the messeges in uniform (looking professional)
+// If a messege is sent to the cadet  channel, it wil resend it to keep the messeges in uniform (looking professional)
+
 const { EmbedBuilder, Events } = require('discord.js');
 const idList = require('../data/idList');
 const ids = require('../data/ids');
