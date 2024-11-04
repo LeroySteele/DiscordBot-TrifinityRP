@@ -1,3 +1,6 @@
+// This is used to send the initial messege that contains the button where users can open a ticket. (citizens complaint ticket)
+// This command can only get used by certain roles and only in 1 specific channel
+
 const { SlashCommandBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList');
