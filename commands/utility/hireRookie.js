@@ -1,3 +1,12 @@
+// This command takes 2 parameters (username, department)
+
+// If a new user is recruited, this command will 
+// -add them to the excel sheet 
+// -give them a nickname in discord (with their call sign)
+// -give them the required police roles based on their department
+// -sends a messege in the users job application and displays the 10-codes, dress code and further instructions
+// -sends a messege in the logs channel for record keeping
+
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js');
 const idList = require('../../data/idList');
 const ids = require('../../data/ids.js');
