@@ -1,3 +1,6 @@
+// Everytime a ticket gets created, a 'close button' will get sent inside the ticket so it can get closed once it has served it purpose.
+// If a user selects this, they will still have to confirm the action by selecting 'ButtonCloseYes'
+
 const { Events, EmbedBuilder, ButtonStyle, ButtonBuilder, ActionRowBuilder } = require('discord.js');
 
 module.exports = { 
