@@ -1,3 +1,5 @@
+// Used to create a ticket, adds the required members and then sends the relative information based on the ticket type.
+
 const { Events, ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle } = require('discord.js');
 
 module.exports = { 
