@@ -29,5 +29,7 @@ Contains the custom event listeners for:
 - Role updates will display on the excel sheet
 - Using button clicks will open specific ticket types
 - Logs members joining/leaving
-- handles suggestion channel and resends the template 
+- handles suggestion channel and resends the template
+
+Any file starting with 'button' is used to handle onClick events and will create the ticket they selected
                                        
