@@ -1,3 +1,5 @@
+// This commmand can be used to view information about the discord server
+
 const { SlashCommandBuilder, ChannelType } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const ids = require('../../data/ids.js');
