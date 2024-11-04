@@ -1,3 +1,7 @@
+// By default new users can only see this 1 channel 
+// This is used to send the initial messege where users can set thier nickname to their in-game RP name so they can see the rest of the channels.
+// This command can only get used by certain roles and only in 1 specific channel
+
 const { SlashCommandBuilder, ButtonBuilder, ButtonStyle, ActionRowBuilder } = require('discord.js');
 const { EmbedBuilder } = require('@discordjs/builders');
 const idList = require('../../data/idList');
