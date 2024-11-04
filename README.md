@@ -1,7 +1,7 @@
 # DiscordBot-TrifinityRP
 
 This is a discord bot for a private FiveM GTA police RP server used to automatically manage users, roles and all linked actions.
-This bot is registered on Discord Developer Portal, displays certain information using an online excel sheet.
+This bot is registered on Discord Developer Portal and displays certain information using an online excel sheet.
 It handles custom slash commands and custom event listeners with an indepth ticket system.
 
 ### Commands to run in console during setup
@@ -20,7 +20,8 @@ Contains the discord ID's for the categories, channels and roles.
 
 
 ## Commands folder
-Register the slash commands by running 'node deploy-commands.js' in console then they can get used within discord by using a '/' followed by the command name. 
+Register the slash commands by running 'node deploy-commands.js' in console then they can get used within discord by using a '/' followed by the command name.
+All command files starting on 'owner' are used to send the initial messege that contains the button where users can open tickets.
 
 
 ## Events folder
