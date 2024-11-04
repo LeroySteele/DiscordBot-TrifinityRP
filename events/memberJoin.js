@@ -1,3 +1,5 @@
+// Once a new member joins the discord, a messege is sent to the logs channel and a default role is given to them (giving them limited permissions)
+
 const { Events, EmbedBuilder } = require('discord.js');
 const idList = require('../data/idList.js');
 const ids = require('../data/ids');
