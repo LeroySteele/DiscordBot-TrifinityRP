@@ -1,3 +1,5 @@
+// If an officer gets a 'certification' role, then the bot will update the excel sheet (added roles or removed roles)
+
 const { Events } = require('discord.js');
 const idList = require('../data/idList');
 const ids = require('../data/ids');
