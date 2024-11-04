@@ -1,4 +1,4 @@
-// If an officer is fired this command can be used to remove all police role, renames the user so they appear as a civilian in teh discord and removes them from the excel sheet
+// If an officer is fired this command can be used to remove all police roles, renames the user so they appear as a civilian in the discord and removes them from the excel sheet
 // A messege is sent in the logs channel to keep track
 
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
