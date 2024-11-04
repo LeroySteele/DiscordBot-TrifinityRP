@@ -1,3 +1,5 @@
+// Used to create a ticket, adds the required members and then sends the relative information based on the ticket type.
+
 const { Events, EmbedBuilder, PermissionsBitField, ChannelType } = require('discord.js');
 const idList = require('../data/idList');
 const ids = require('../data/ids');
