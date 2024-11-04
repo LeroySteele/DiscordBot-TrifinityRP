@@ -1,3 +1,5 @@
+// Once users opt to close a ticket they have to confirm the action, if they use this option (no) then the initial messege will get removed.
+
 const { Events } = require('discord.js');
 const ids = require('../data/ids');
 
